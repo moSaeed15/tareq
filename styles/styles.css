@@ -2393,9 +2393,16 @@ table {
     color: #000;
 }
 
-    .month-box > * {
+    
+}
+.month-box > * {
         width: 100%;
-    }
+}
+
+@media (min-width: 56em) {
+.month-box > * {
+        width: 100%;
+}
 
 @media (min-width: 70em) {
     .subscription__checkout {
