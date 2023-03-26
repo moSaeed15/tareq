@@ -26,7 +26,6 @@ if (carouselContainer)
         },
     });
 
-flatpickr("#date", {});
 
 const credit = document.querySelector("#credit-card");
 if (credit)
@@ -133,6 +132,10 @@ const inputLocation = document.querySelector("#location");
 const timeForm = document.querySelector("#time__form");
 const timeButton = document.querySelector("#time__button");
 const inputsValues = [];
+
+if(inputDate)
+flatpickr("#date", {});
+
 
 if (timeForm) {
     timeForm.addEventListener("keyup", function (e) {
