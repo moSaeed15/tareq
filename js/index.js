@@ -274,6 +274,7 @@ const inputCard = document.querySelector('#card__input');
 const inputMonth = document.querySelector('#month__input');
 const inputCVC = document.querySelector('#CVC__input');
 const creditPayment = document.querySelector('.booking__payment__button');
+const subPayment = document.querySelector('#sub__payment');
 
 if (inputMonth) {
   const cleaveDate = new Cleave('#month__input', {
@@ -281,6 +282,15 @@ if (inputMonth) {
     datePattern: ['m', 'y'],
   });
 }
+
+if (subPayment) {
+  console.log('first');
+  const cleaveDate = new Cleave('#sub__payment', {
+    date: true,
+    datePattern: ['m', 'y'],
+  });
+}
+
 if (payLater)
   payLater.addEventListener('click', function (e) {
     payLater.classList.toggle('active-service-item');

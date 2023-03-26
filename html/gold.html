@@ -1,296 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="The Best Booking System For Salons & Spas. 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Best Booking System For Salons & Spas. 
             Sign Up Free. Grow Your Salon And Save Time "
-        />
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link
-            rel="preload"
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Swiper css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper js -->
+
+    <!-- My javascript file -->
+
+    <script defer src="../js/index.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Meetendo</title>
+  </head>
+
+  <body>
+    <nav class="nav container">
+      <div class="hidden overlay"></div>
+      <div class="nav__logo">
+        <img
+          src="../assests/shared/logo.webp"
+          alt="Meetendo logo"
+          class="nav__logo__img"
         />
-        <noscript>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-                rel="stylesheet"
+        <h2 class="nav__logo__title">Meetendo</h2>
+      </div>
+      <ul class="nav__list">
+        <a href="../html/index.html"> <li class="nav__list__item">Home</li></a>
+        <a href=""> <li class="nav__list__item">Pricing</li></a>
+        <a href=""> <li class="nav__list__item">Support</li></a>
+      </ul>
+
+      <div class="nav__login">
+        <a class="nav__login__link" href="">Log in</a>
+        <button class="nav__login__button">
+          <a href="../html/subscription.html">Subscribe Now</a>
+        </button>
+      </div>
+      <img class="nav__menu" src="../assests/shared/menu.svg" alt="" />
+      <div class="hidden mobile-menu">
+        <ul>
+          <a href="../html/index.html">
+            <li class="mobile-menu--item">Home</li></a
+          >
+          <a href=""> <li class="mobile-menu--item">Pricing</li></a>
+          <a href=""> <li class="mobile-menu--item">Support</li></a>
+        </ul>
+        <div class="mobile-menu__login">
+          <a class="nav__login__link" href="">Log in</a>
+          <button class="nav__login__button">
+            <a href="../html/subscription.html">Subscribe Now</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="subscription__checkout">
+      <div class="subscription__checkout-description">
+        <h2
+          class="subscription__checkout-title subscription__checkout-title--gold"
+        >
+          Monthly Gold
+        </h2>
+        <p class="subscription__checkout-text">
+          Get 3 Months For FREE with this Pack, plus all these features
+        </p>
+        <ul class="subscription__checkout-list">
+          <li>Silver Feature</li>
+          <li>Online Booking</li>
+          <li>Online booking Payment</li>
+          <li>Shop booking SMS Notification</li>
+          <li>Online booking system</li>
+          <li>Unlimited employee definition</li>
+          <li>Unlimited Client Definition</li>
+          <li>Unlimited Services Definition</li>
+          <li>Shop Reports Access</li>
+          <li>Mobile appointment booking integration</li>
+          <li>Client invoices</li>
+          <li>5% AED online booking transaction</li>
+          <li>3000 AED Setup fee</li>
+        </ul>
+        <span class="subscription__checkout-old_price"> 799 AED</span>
+        <span class="subscription__checkout-new_price">399 AED</span>
+      </div>
+
+      <div class="subscription__checkout-payment">
+        <h3 class="subscription__checkout-title">Payment</h3>
+        <form class="subscription__checkout-form" action="">
+          <div class="subscription__checkout-coupon__box">
+            <label></label>
+            <input
+              class="input__coupon"
+              type="text"
+              placeholder="Enter The Coupon"
             />
-        </noscript>
+            <a href=""> Apply</a>
+          </div>
 
-        <!-- Swiper css -->
+          <div class="subscription__checkout-credit">
+            <label id="credit-card" class="subscription__checkout-credit__label"
+              >Credit Card</label
+            >
+            <div
+              id="credit-inputs"
+              class="hidden subscription__checkout--credit-info"
+            >
+              <div class="subscription__checkout--email">
+                <label></label>
+                <input type="text" placeholder="Name" />
+              </div>
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+              <div class="subscription__checkout--card">
+                <label></label>
+                <input type="text" placeholder="Card Number " />
+              </div>
+              <div class="month-box" style="display: flex; gap: 1rem">
+                <div class="subscription__checkout--month">
+                  <label></label>
+                  <input id="sub__payment" type="text" placeholder="MM/YY" />
+                </div>
+                <div class="subscription__checkout--cvc">
+                  <label></label>
+                  <input type="text" placeholder="CVC" />
+                </div>
+              </div>
+              <button class="subscription__checkout-pay__button">
+                Pay 300$
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="subscription__checkout__button__box">
+          <a href="./subscription.html">Back</a>
+          <button class="subscription__checkout-continue__button">
+            Continue
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="join__section">
+      <h2 class="join__section-title">
+        You have a Business and want to join Meetendo ?
+      </h2>
+
+      <form class="join__section-form" action="">
+        <label class="join__section-label"></label>
+
+        <input
+          class="join__section-input"
+          type="text"
+          placeholder="Enter Your Email"
         />
+        <input class="join__section-button" type="submit" />
+      </form>
+      <div class="join__section-overlay"></div>
+    </section>
+    <footer class="footer">
+      <header class="footer__header">
+        <h3 class="footer__header-title">Download our App now !</h3>
+        <div class="footer__header-store">
+          <a href="">
+            <img src="../assests/shared/app-store.webp" alt="app-store" />
+          </a>
+          <a href="">
+            <img src="../assests/shared/google-play.webp" alt="google-play" />
+          </a>
+        </div>
+      </header>
 
-        <!-- Swiper js -->
-
-        <!-- My javascript file -->
-
-        <script defer src="../js/index.js"></script>
-        <link rel="stylesheet" href="../styles/styles.css" />
-        <title>Meetendo</title>
-    </head>
-
-    <body>
-        <nav class="nav container">
-            <div class="hidden overlay"></div>
-            <div class="nav__logo">
-                <img
-                    src="../assests/shared/logo.webp"
-                    alt="Meetendo logo"
-                    class="nav__logo__img"
-                />
-                <h2 class="nav__logo__title">Meetendo</h2>
-            </div>
-            <ul class="nav__list">
-                <a href="../html/index.html">
-                    <li class="nav__list__item">Home</li></a
-                >
-                <a href=""> <li class="nav__list__item">Pricing</li></a>
-                <a href=""> <li class="nav__list__item">Support</li></a>
-            </ul>
-
-            <div class="nav__login">
-                <a class="nav__login__link" href="">Log in</a>
-                <button class="nav__login__button">
-                    <a href="../html/subscription.html">Subscribe Now</a>
-                </button>
-            </div>
-            <img class="nav__menu" src="../assests/shared/menu.svg" alt="" />
-            <div class="hidden mobile-menu">
-                <ul>
-                    <a href="../html/index.html">
-                        <li class="mobile-menu--item">Home</li></a
-                    >
-                    <a href=""> <li class="mobile-menu--item">Pricing</li></a>
-                    <a href=""> <li class="mobile-menu--item">Support</li></a>
-                </ul>
-                <div class="mobile-menu__login">
-                    <a class="nav__login__link" href="">Log in</a>
-                    <button class="nav__login__button">
-                        <a href="../html/subscription.html">Subscribe Now</a>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-        <section class="subscription__checkout">
-            <div class="subscription__checkout-description">
-                <h2
-                    class="subscription__checkout-title subscription__checkout-title--gold"
-                >
-                    Monthly Gold
-                </h2>
-                <p class="subscription__checkout-text">
-                    Get 3 Months For FREE with this Pack, plus all these
-                    features
-                </p>
-                <ul class="subscription__checkout-list">
-                    <li>Silver Feature</li>
-                    <li>Online Booking</li>
-                    <li>Online booking Payment</li>
-                    <li>Shop booking SMS Notification</li>
-                    <li>Online booking system</li>
-                    <li>Unlimited employee definition</li>
-                    <li>Unlimited Client Definition</li>
-                    <li>Unlimited Services Definition</li>
-                    <li>Shop Reports Access</li>
-                    <li>Mobile appointment booking integration</li>
-                    <li>Client invoices</li>
-                    <li>5% AED online booking transaction</li>
-                    <li>3000 AED Setup fee</li>
-                </ul>
-                <span class="subscription__checkout-old_price"> 799 AED</span>
-                <span class="subscription__checkout-new_price">399 AED</span>
-            </div>
-
-            <div class="subscription__checkout-payment">
-                <h3 class="subscription__checkout-title">Payment</h3>
-                <form class="subscription__checkout-form" action="">
-                    <div class="subscription__checkout-coupon__box">
-                        <label></label>
-                        <input
-                            class="input__coupon"
-                            type="text"
-                            placeholder="Enter The Coupon"
-                        />
-                        <a href=""> Apply</a>
-                    </div>
-
-                    <div class="subscription__checkout-credit">
-                        <label
-                            id="credit-card"
-                            class="subscription__checkout-credit__label"
-                            >Credit Card</label
-                        >
-                        <div
-                            id="credit-inputs"
-                            class="hidden subscription__checkout--credit-info"
-                        >
-                            <div class="subscription__checkout--email">
-                                <label></label>
-                                <input type="text" placeholder="Name" />
-                            </div>
-
-                            <div class="subscription__checkout--card">
-                                <label></label>
-                                <input type="text" placeholder="Card Number " />
-                            </div>
-                            <div
-                                class="month-box"
-                                style="display: flex; gap: 1rem"
-                            >
-                                <div class="subscription__checkout--month">
-                                    <label></label>
-                                    <input type="text" placeholder="MM/YY" />
-                                </div>
-                                <div class="subscription__checkout--cvc">
-                                    <label></label>
-                                    <input type="text" placeholder="CVC" />
-                                </div>
-                            </div>
-                            <button class="subscription__checkout-pay__button">
-                                Pay 300$
-                            </button>
-                        </div>
-                    </div>
-                </form>
-                <div class="subscription__checkout__button__box">
-                    <a href="./subscription.html">Back</a>
-                    <button class="subscription__checkout-continue__button">
-                        Continue
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="join__section">
-            <h2 class="join__section-title">
-                You have a Business and want to join Meetendo ?
-            </h2>
-
-            <form class="join__section-form" action="">
-                <label class="join__section-label"></label>
-
-                <input
-                    class="join__section-input"
-                    type="text"
-                    placeholder="Enter Your Email"
-                />
-                <input class="join__section-button" type="submit" />
-            </form>
-            <div class="join__section-overlay"></div>
-        </section>
-        <footer class="footer">
-            <header class="footer__header">
-                <h3 class="footer__header-title">Download our App now !</h3>
-                <div class="footer__header-store">
-                    <a href="">
-                        <img
-                            src="../assests/shared/app-store.webp"
-                            alt="app-store"
-                        />
-                    </a>
-                    <a href="">
-                        <img
-                            src="../assests/shared/google-play.webp"
-                            alt="google-play"
-                        />
-                    </a>
-                </div>
-            </header>
-
-            <div class="footer__pages">
-                <div class="footer__page">
-                    <span class="footer__list-title">Product</span>
-                    <ul>
-                        <li>Overview</li>
-                        <li>Features</li>
-                        <li>Solutions</li>
-                        <li>Tutorials</li>
-                        <li>Pricing</li>
-                        <li>Releases</li>
-                    </ul>
-                </div>
-                <div class="footer__page">
-                    <span class="footer__list-title">Company</span>
-                    <ul>
-                        <li>About us</li>
-                        <li>Careers</li>
-                        <li>Press</li>
-                        <li>News</li>
-                        <li>Media kit</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="footer__page">
-                    <span class="footer__list-title">Resources</span>
-                    <ul>
-                        <li>Blog</li>
-                        <li>Newsletter</li>
-                        <li>Events</li>
-                        <li>Help centre</li>
-                        <li>Tutorials</li>
-                        <li>Support</li>
-                    </ul>
-                </div>
-                <div class="footer__page">
-                    <span class="footer__list-title">Use cases</span>
-                    <ul>
-                        <li>Startups</li>
-                        <li>Enterprise</li>
-                        <li>Government</li>
-                        <li>SaaS</li>
-                        <li>Marketplaces</li>
-                        <li>Ecommerce</li>
-                    </ul>
-                </div>
-                <div class="footer__page">
-                    <span class="footer__list-title">Social</span>
-                    <ul>
-                        <li>Twitter</li>
-                        <li>LinkedIn</li>
-                        <li>Facebook</li>
-                        <li>GitHub</li>
-                        <li>AngelList</li>
-                        <li>Dribbble</li>
-                    </ul>
-                </div>
-                <div class="footer__page">
-                    <span class="footer__list-title">Legal</span>
-                    <ul>
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                        <li>Cookies</li>
-                        <li>Licenses</li>
-                        <li>Settings</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__end">
-                <div class="footer__end-logo">
-                    <img
-                        class="footer__end-logo__img"
-                        src="../assests/shared/logo.webp"
-                        alt="logo"
-                    />
-                    <span class="footer__end-logo">Meetendo</span>
-                </div>
-                <h4 class="copyright">© 2023 All rights reserved.</h4>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    </body>
+      <div class="footer__pages">
+        <div class="footer__page">
+          <span class="footer__list-title">Product</span>
+          <ul>
+            <li>Overview</li>
+            <li>Features</li>
+            <li>Solutions</li>
+            <li>Tutorials</li>
+            <li>Pricing</li>
+            <li>Releases</li>
+          </ul>
+        </div>
+        <div class="footer__page">
+          <span class="footer__list-title">Company</span>
+          <ul>
+            <li>About us</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>News</li>
+            <li>Media kit</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer__page">
+          <span class="footer__list-title">Resources</span>
+          <ul>
+            <li>Blog</li>
+            <li>Newsletter</li>
+            <li>Events</li>
+            <li>Help centre</li>
+            <li>Tutorials</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="footer__page">
+          <span class="footer__list-title">Use cases</span>
+          <ul>
+            <li>Startups</li>
+            <li>Enterprise</li>
+            <li>Government</li>
+            <li>SaaS</li>
+            <li>Marketplaces</li>
+            <li>Ecommerce</li>
+          </ul>
+        </div>
+        <div class="footer__page">
+          <span class="footer__list-title">Social</span>
+          <ul>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>GitHub</li>
+            <li>AngelList</li>
+            <li>Dribbble</li>
+          </ul>
+        </div>
+        <div class="footer__page">
+          <span class="footer__list-title">Legal</span>
+          <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+            <li>Licenses</li>
+            <li>Settings</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__end">
+        <div class="footer__end-logo">
+          <img
+            class="footer__end-logo__img"
+            src="../assests/shared/logo.webp"
+            alt="logo"
+          />
+          <span class="footer__end-logo">Meetendo</span>
+        </div>
+        <h4 class="copyright">© 2023 All rights reserved.</h4>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"
+      integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
 </html>

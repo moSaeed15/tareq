@@ -1577,9 +1577,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2.2rem;
+  justify-content: center;
 }
 
 .subscriptions__section-card {
+  margin-top: 3rem;
   position: relative;
   z-index: 5;
   margin-inline: 1.6rem;
@@ -1591,6 +1593,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: start;
+  max-width: 52.4rem;
 }
 
 .subscriptions__section-card--gold {
